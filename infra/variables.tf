@@ -13,7 +13,7 @@ variable "jar" {
 variable "memoria" {
   description = "Memoria de la función en MB"
   type        = number
-  default     = 256
+  default     = 128
 
   validation {
     condition     = var.memoria >= 128 && var.memoria <= 1024
